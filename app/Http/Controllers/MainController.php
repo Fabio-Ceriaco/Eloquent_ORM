@@ -10,7 +10,7 @@ class MainController extends Controller
 {
     public function index()
     {
-        // obteain all data from products
+        // obtain all data from products
 
         // $results = Product::all(); // SELECT * FROM products;
 
@@ -22,7 +22,7 @@ class MainController extends Controller
         // echo $results[0]->product_name;
 
 
-        // obteain all data as an assoc array
+        // obtain all data as an assoc array
 
         // $results = Product::all()->toArray();
 
@@ -31,21 +31,21 @@ class MainController extends Controller
         // return results as an array of objects strClass
         // $results = $this->ArrayOfObject(Product::all()->toArray());
 
-        // obteain all products order by name
+        // obtain all products order by name
         // $results = Product::orderBy('product_name')->get()->toArray();
 
-        // obteain 3 first products
+        // obtain 3 first products
         // $results = Product::limit(3)->get()->toArray();
 
-        // obteain product from id
+        // obtain product from id
         // $results = Product::find(10)->toArray();
 
-        // obteain products with Where..
+        // obtain products with Where..
         // $results = Product::where('price', '>=', 70)->get()->toArray();
 
         // $results = Product::where('price', '>=', 70)->first()->toArray();
 
-        // obteains only the first elemnt if exists, if not exist return a empty array
+        // obtains only the first elemnt if exists, if not exist return a empty array
         // $results = Product::where('price', '>=', 190)->firstOr(function () {
         //     return [];
         // });
