@@ -15,7 +15,7 @@ class MainController extends Controller
         // RETRIEV = SELECT
 
 
-        // obteain all data from products
+        // obtain all data from products
 
         // $results = Product::all(); // SELECT * FROM products;
 
@@ -27,7 +27,7 @@ class MainController extends Controller
         // echo $results[0]->product_name;
 
 
-        // obteain all data as an assoc array
+        // obtain all data as an assoc array
 
         // $results = Product::all()->toArray();
 
