@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Client;
+use App\Models\Phone;
 use Illuminate\Http\Request;
 
 
@@ -82,6 +83,20 @@ class MainController extends Controller
         //     }
         //     $i++;
         // }
+    }
+
+    public function BelongsTo()
+    {
+        // find client through phone number
+        // $phone1 = Phone::find(10);
+        // $client = $phone1->client;
+        // echo 'Phone: ' . $phone1->phone_number . '<br>';
+        // echo 'Client: ' . $client->client_name;
+
+        // using with()
+        // $phone = Phone::with('client')->find(10);
+        // echo 'Phone: ' . $phone->phone_number . '<br>';
+        // echo 'Client: ' . $phone->client->client_name;
     }
 
 

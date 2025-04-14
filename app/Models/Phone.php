@@ -3,5 +3,14 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class Phone extends Model {}
+class Phone extends Model
+{
+
+    // Belongs to
+    public function client(): BelongsTo
+    {
+        return $this->belongsTo(Client::class);
+    }
+}
