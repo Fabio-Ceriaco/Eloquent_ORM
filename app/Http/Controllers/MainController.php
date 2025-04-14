@@ -18,7 +18,7 @@ class MainController extends Controller
     public function OneToOne()
     {
 
-        // obteain phone number form a client
+        // obtain phone number form a client
 
         // $client1 = Client::find(12)->phone;
 
@@ -53,7 +53,7 @@ class MainController extends Controller
     public function OneToMany()
     {
 
-        // obteain id, name and all phone numbers
+        // obtain id, name and all phone numbers
         // $client1 = Client::find(10);
         // $phones = $client1->phones;
         // echo "Client: " . $client1->client_name . '<br>';
@@ -71,7 +71,7 @@ class MainController extends Controller
         //     echo $phone->phone_number . '<br>';
         // }
 
-        // obteain all clients and all phones
+        // obtain all clients and all phones
         // $clients = Client::with('phones')->get();
         // $i = 1;
         // foreach ($clients as $client) {
