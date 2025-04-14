@@ -147,6 +147,25 @@ class MainController extends Controller
         //         'updated_at' => Carbon::now(),
         //     ],
         // ]);
+
+
+
+        // UPDATE
+
+        // $product = Product::find(10); // SELECT * FROM products WHERE id = 10
+        // $product->product_name = 'Clementina';
+        // $product->price = 100;
+        // $product->save();
+
+        // Product::where('price', '<=', '10')->update([
+        //     'price' => 150,
+        // ]);
+
+        // update (if exist) or create
+        // Product::updateOrCreate(
+        //     ['product_name' => 'chili'],
+        //     ['price' => 25],
+        // );
     }
 
     private function showData($data)
