@@ -166,6 +166,45 @@ class MainController extends Controller
         //     ['product_name' => 'chili'],
         //     ['price' => 25],
         // );
+
+
+        // DELETE - hard delete and soft delete
+
+        //-----------------------------
+        // hard delete
+        //-----------------------------
+
+        // $product = Product::find(10);
+        // $product->delete();
+
+        // drop all table
+        // Product::truncate();
+
+        // Product::destroy(1);
+        // Product::destroy(2, 3, 5);
+        // Product::destroy([6, 7, 8]);
+
+        // Product::where('price', '>=', 70)->delete();
+
+        //-------------------------------
+        // soft delete
+        //-------------------------------
+
+        // $product = Product::find(25);
+        // $product->delete();
+
+        // recover product with soft delete
+        // $product = Product::withTrashed()
+        //     ->where('id', 25)
+        //     ->restore();
+
+        // $product = Product::withTrashed()
+        //     ->find(25)
+        //     ->restore();
+
+        // $product = Product::withTrashed()
+        //     ->find(25);
+        // $product->restore();
     }
 
     private function showData($data)
