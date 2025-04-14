@@ -17,7 +17,7 @@ class MainController extends Controller
     public function OneToOne()
     {
 
-        // obteain phone number form a client
+        // obtain phone number form a client
 
         // $client1 = Client::find(12)->phone;
 
