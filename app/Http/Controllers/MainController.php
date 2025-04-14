@@ -40,13 +40,48 @@ class MainController extends Controller
         // echo 'Client Phone: ' . $client3->phone->phone_number;
         // echo '<hr>';
 
-        $clients = Client::with('phone')->get();
-        $i = 1;
-        foreach ($clients as $client) {
-            echo '<br>';
-            echo $i . ' - Client Name : ' . $client->client_name . ' - Phone : ' . $client->phone->phone_number;
-            $i++;
-        }
+        // $clients = Client::with('phone')->get();
+        // $i = 1;
+        // foreach ($clients as $client) {
+        //     echo '<br>';
+        //     echo $i . ' - Client Name : ' . $client->client_name . ' - Phone : ' . $client->phone->phone_number;
+        //     $i++;
+        // }
+    }
+
+    public function OneToMany()
+    {
+
+        // obteain id, name and all phone numbers
+        // $client1 = Client::find(10);
+        // $phones = $client1->phones;
+        // echo "Client: " . $client1->client_name . '<br>';
+        // echo "Phones: <br>";
+        // foreach ($phones as $phone) {
+        //     echo $phone->phone_number . '<br>';
+        // }
+
+        // using with()
+        // $client2 = Client::with('phones')->find(10);
+        // echo '<br>';
+        // echo "Client: " . $client2->client_name . '<br>';
+        // echo "Phones: <br>";
+        // foreach ($client2->phones as $phone) {
+        //     echo $phone->phone_number . '<br>';
+        // }
+
+        // obteain all clients and all phones
+        // $clients = Client::with('phones')->get();
+        // $i = 1;
+        // foreach ($clients as $client) {
+        //     echo '<br>';
+        //     echo $i . ' - Client Name : ' . $client->client_name . '<br>';
+        //     echo ' - Phone : <br>';
+        //     foreach ($client->phones as $phone) {
+        //         echo  $phone->phone_number . '<br>';
+        //     }
+        //     $i++;
+        // }
     }
 
 
