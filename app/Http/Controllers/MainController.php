@@ -5,11 +5,16 @@ namespace App\Http\Controllers;
 use App\Models\Product;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
 
 class MainController extends Controller
 {
     public function index()
     {
+
+        // RETRIEV = SELECT
+
+
         // obteain all data from products
 
         // $results = Product::all(); // SELECT * FROM products;
@@ -102,6 +107,46 @@ class MainController extends Controller
 
 
         // $this->showData($results);
+
+
+        // INSERT
+
+        // insert new product in products table
+        // $new_product = new Product(); // define new object in db
+        // // insert new values/data to new object
+        // $new_product->product_name = 'Novo produto';
+        // $new_product->price = 50;
+        // $new_product->save();
+        // // INSERT INTO products(product_name, price) VALUES ('Novo produto', 50);
+
+
+
+
+        // Product::create([
+        //     'product_name' => 'Novo produto2',
+        //     'price' => 60,
+        // ]);
+
+        // Product::insert([
+        //     [
+        //         'product_name' => 'produto 4',
+        //         'price' => 40,
+        //         'created_at' => Carbon::now(),
+        //         'updated_at' => Carbon::now(),
+        //     ],
+        //     [
+        //         'product_name' => 'produto 5',
+        //         'price' => 50,
+        //         'created_at' => Carbon::now(),
+        //         'updated_at' => Carbon::now(),
+        //     ],
+        //     [
+        //         'product_name' => 'produto 6',
+        //         'price' => 60,
+        //         'created_at' => Carbon::now(),
+        //         'updated_at' => Carbon::now(),
+        //     ],
+        // ]);
     }
 
     private function showData($data)
